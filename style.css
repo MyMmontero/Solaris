@@ -1,0 +1,197 @@
+/* ====== VARIABLES Y ESTILOS GENERALES ====== */
+:root {
+  --color-success: #198754;
+  --color-dark: #212529;
+  --color-light: #f8f9fa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: #333;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ====== NAVBAR ====== */
+.navbar-modern {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  color: #212529 !important;
+}
+
+.nav-link-custom {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.nav-link-custom:hover {
+  color: var(--color-success) !important;
+}
+
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23198754' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ====== SECCIÓN HERO ====== */
+.hero-section {
+  padding: 100px 0 80px 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.hero-section h1 {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.2;
+}
+
+.hero-section .text-success {
+  color: var(--color-success) !important;
+}
+
+.hero-section img {
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* ====== BENEFICIOS ====== */
+#beneficios {
+  background-color: var(--color-light);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px rgba(25, 135, 84, 0.15) !important;
+}
+
+/* ====== CÓMO FUNCIONA ====== */
+#como-funciona h2 {
+  margin-bottom: 60px;
+}
+
+/* ====== SERVICIOS ====== */
+#servicios {
+  background-color: var(--color-light);
+}
+
+.border-start {
+  border-start-width: 5px !important;
+}
+
+/* ====== CONTACTO ====== */
+#contacto {
+  padding: 100px 0 80px 0;
+}
+
+.form-control,
+.form-control:focus {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+  border-color: var(--color-success);
+  box-shadow: 0 0 0 0.2rem rgba(25, 135, 84, 0.15);
+}
+
+.form-label {
+  color: #212529;
+  margin-bottom: 8px;
+}
+
+/* ====== FOOTER ====== */
+footer {
+  background-color: #1a1a1a;
+  border-top: 3px solid var(--color-success);
+}
+
+/* ====== UTILITIES ====== */
+.text-success {
+  color: var(--color-success) !important;
+}
+
+.btn-success {
+  background-color: var(--color-success);
+  border-color: var(--color-success);
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  background-color: #157347;
+  border-color: #157347;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(25, 135, 84, 0.3);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 80px 0 60px 0;
+    min-height: auto;
+  }
+
+  .hero-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .hero-section p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 60px 0 !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 60px 0 40px 0;
+  }
+
+  .hero-section h1 {
+    font-size: 1.75rem;
+  }
+
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .navbar {
+    padding: 0.5rem 0 !important;
+  }
+}
+
